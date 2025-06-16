@@ -32,6 +32,51 @@
         .nav-links a:hover {
             text-decoration: underline;
         }
+
+        .main-content {
+            display: flex;
+            padding: 50px;
+            gap: 40px;
+        }
+
+        .left-box, .right-box {
+            flex: 1;
+            padding: 30px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-box h2 {
+            font-size: 28px;
+            color: #305175;
+            margin-bottom: 20px;
+        }
+
+        .left-box p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .left-box button {
+            padding: 10px 20px;
+            background-color: #305175;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .left-box button:hover {
+            background-color: #406893;
+        }
+
+        .right-box img {
+            max-width: 200%;
+            height: auto;
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body>
@@ -44,6 +89,20 @@
             <a href="#">Projects</a>
             <a href="#">Skills</a>
             <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="left-box">
+            <h2>MERN Stack Developer</h2>
+            <p>
+                A MERN Stack Developer specializes in using MongoDB, Express.js, React, and Node.js to build full-stack web applications. 
+                This tech stack enables rapid development of efficient, scalable, and modern web solutions.
+            </p>
+            <button onclick="window.location.href='#projects'">View My Projects</button>
+        </div>
+        <div class="right-box">
+            <img src="data:image/png;base64,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" alt="MERN Stack Skills Diagram">
         </div>
     </div>
 
