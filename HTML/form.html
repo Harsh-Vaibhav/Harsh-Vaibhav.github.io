@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Form</title>
+</head>
+<body>
+    <h1>FORM TAGS</h1>
+    <form>
+        <p><input type="text" value="Harsh" disabled size="10px"/></p>
+        <p><input type="text" placeholder="Enter the name" size="10px"/></p>
+        <button>Submit</button>
+        <input type="submit" value="submit"/>
+        <input type="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSLXeDk1OcyAlUBA8HcYnL9b_a_XAmas4Rkg&s" width="100px" height="100px"/>
+    </form>
+<br>
+    <fieldset>
+        <legend><strong>Login Form</strong></legend>
+        <form>
+            <p>
+                <input type="email" placeholder="Email address" required/>
+            </p>
+            <p>
+                <input type="password" placeholder="Enter the password" required/>
+            </p>
+            <p><input type="date"></p>
+            <p>Tick your desired courses:<br>
+                <input type="checkbox" checked>MERN Stack
+                <input type="checkbox">Java Full Stack
+                <input type="checkbox">Python Full Stack
+            </p>
+            <p>
+                Choose your batch:
+                <input type="radio" name="batch" checked>Morning Batch
+                <input type="radio" name="batch">Evening Batch
+            </p>
+            <p>Select your Program<br>
+                <select mutiple>
+                    <option>BE</option>
+                    <option selected>B.Tech</option>
+                    <option>MBA</option>
+                </select></p>
+            <input type="file">
+           <p><input type="color"></p>
+           <p>Age:<input type="number"/></p>
+           <p><strong>Choose your suitable location:</strong>
+            <select>
+                <optgroup label="India">
+                    <option>Delhi</option>
+                    <option>Hyderabad</option>
+                </optgroup>
+                <optgroup label="USA">
+                    <option>JacksonVille</option>
+                    <option>Miami</option>
+                </optgroup>
+            </select>
+           </p>
+           <p>
+            <label>
+    <input type="checkbox" name="rememberMe" />
+    Remember Me
+  </label>
+           </p>
+           <p><strong>Enter Your Country:</strong><br>
+            <input list="country">
+            <datalist id="country">
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>Canada</option>
+            </datalist>
+           </p>
+
+            <button>Login</button>
+            <input type="reset">
+        </form>
+    </fieldset>
+
+</body>
+</html>
