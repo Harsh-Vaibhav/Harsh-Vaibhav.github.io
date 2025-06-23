@@ -37,4 +37,4 @@
 
 let a = 10
 let value = a??11
-console.log
+console.log(value)
