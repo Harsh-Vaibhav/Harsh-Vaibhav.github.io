@@ -9,8 +9,10 @@ const products = [
 const showProducts = () => {
     str="";
     products.map((value)=>{
-        str+= `${name} - ${price}`;
+        str+= `${value.name} - ${value.price} \n`;
     })
     console.log(str);
 }
 showProducts();
+const now = new Date();
+console.log(now.toString());
