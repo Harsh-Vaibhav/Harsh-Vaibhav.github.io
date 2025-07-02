@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Projects | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f7fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #2c3e50;
+      padding: 30px 20px;
+      color: white;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 2.5em;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .project-box {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .project-box:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    }
+
+    .project-logo {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 15px;
+    }
+
+    .project-title {
+      font-size: 1.3em;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+
+    .project-desc {
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    .project-box a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2c3e50;
+      color: white;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #bdc3c7;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #ecf0f1;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Projects</h1>
+    <p>A showcase of some projects I've worked on</p>
+  </header>
+
+  <div class="container">
+
+    <div class="project-box">
+      <a href="project1.html" target="_blank">
+        <img src="icons/weather-icon.png" alt="Weather App Logo" class="project-logo" />
+        <div class="project-title">Weather App</div>
+        <div class="project-desc">Real-time weather forecast using OpenWeather API.</div>
+      </a>
+    </div>
+
+    <div class="project-box">
+      <a href="project2.html" target="_blank">
+        <img src="icons/portfolio-icon.png" alt="Portfolio Icon" class="project-logo" />
+        <div class="project-title">Portfolio Website</div>
+        <div class="project-desc">A personal portfolio site to showcase my work.</div>
+      </a>
+    </div>
+
+    <div class="project-box">
+      <a href="project3.html" target="_blank">
+        <img src="icons/task-icon.png" alt="Task Manager Logo" class="project-logo" />
+        <div class="project-title">Task Manager</div>
+        <div class="project-desc">A React-based app for tracking daily tasks.</div>
+      </a>
+    </div>
+
+    <div class="project-box">
+      <a href="project4.html" target="_blank">
+        <img src="icons/chatbot-icon.png" alt="Chatbot Logo" class="project-logo" />
+        <div class="project-title">AI Chatbot</div>
+        <div class="project-desc">GPT-powered chatbot for instant Q&A support.</div>
+      </a>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Harsh Vaibhav | <a href="index.html">Back to Home</a>
+  </footer>
+
+</body>
+</html>
